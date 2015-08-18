@@ -29,7 +29,9 @@ On OrangePi 2, the path for Gpio 17 is /sys/class/gpio_sw/PA1
 and the path for Gpio 4 is/sys/class/gpio_sw/PA6
 
 
-Set Gpio 17 in mode read: echo 0 > /sys/class/gpio_sw/PA1/cfg
+Set Gpio 17 in mode read: 
+
+> echo 0 > /sys/class/gpio_sw/PA1/cfg
 
 On RPI it should be something like: echo "in" /sys/class/gpio/gpio17/direction
 
@@ -43,6 +45,6 @@ Now we want to send the RF signal, run the command: ./RFsend /sys/class/gpio_sw/
 
 On RPI it should be something like: ./RFsend /sys/class/gpio/gpio4/value data.txt
 
-
+That's all ;-)
 
 
