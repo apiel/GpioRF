@@ -41,8 +41,11 @@ Now we want to send the RF signal, run the command:
 > ./RFsend /sys/class/gpio_sw/PA6/data data.txt
 
 *On RPI it should be something like:*
+
 *echo "in" /sys/class/gpio/gpio17/direction*
+
 *./RFsave /sys/class/gpio/gpio17/value data.txt*
+
 *./RFsend /sys/class/gpio/gpio4/value data.txt*
 
 That's all ;-)
