@@ -15,8 +15,14 @@ g++ -o RFsend RFsend.cpp
 
 ## Board / RF module
 
-You will need a RF receiver and RF transmitter. For both connect Gcc on 1 Gcc pin of the board, Vcc on 1 5V pin of the board. For the receiver connect the data (digital) to 1 Gpio pin of the board, eg. Gpio17 pin 11. For the transmitter 
+You will need a RF receiver and RF transmitter. For both connect Gcc on 1 Gcc pin of the board, Vcc on 1 5V pin of the board. For the receiver connect the data (digital) to 1 Gpio pin of the board, eg. Gpio17 pin 11. For the transmitter  connect the data to another Gpio pin of the board, eg. Gpio4 pin 7.
 
 ## How to use it
+
+I made my test on OrangePi 2 but it should work as well for Raspberry or whatever...
+On OrangePi 2, the path for Gpio 17 is /sys/class/gpio_sw/PA1
+and the path for Gpio 4 is/sys/class/gpio_sw/PA6
+
+
 
 
