@@ -32,7 +32,7 @@ and the path for Gpio 4 is */sys/class/gpio_sw/PA6*
 Set Gpio 17 in mode read: 
 > echo 0 > /sys/class/gpio_sw/PA1/cfg
 
-While pressing the button you want to record, run the command: 
+While pressing the remote button you will record the signal by running the command: 
 > ./RFsave /sys/class/gpio_sw/PA1/data data.txt
 
 The signal is save in data.txt, you can repeat the method for different button and save them in different files.
