@@ -18,7 +18,7 @@ No need of wiringPi!!
 
 ## Board / RF module
 
-You will need a RF receiver and RF transmitter. For both connect Gcc on a Gcc pin (eg.pin 6) of the board, Vcc on a 5V pin (eg.pin 2) of the board. For the receiver connect the data (digital) to 1 Gpio pin of the board, eg. Gpio17 pin 11. For the transmitter  connect the data to another Gpio pin of the board, eg. Gpio4 pin 7.
+You will need a RF receiver and RF transmitter. For both connect Gcc on a Gcc pin (eg.pin 6) of the board, Vcc on a 5V pin (eg.pin 2) of the board. For the receiver connect the data (digital) to a Gpio pin of the board, eg. Gpio17 pin 11. For the transmitter  connect the data to another Gpio pin of the board, eg. Gpio4 pin 7.
 
 ## How to use it
 
