@@ -32,19 +32,18 @@ and the path for Gpio 4 is */sys/class/gpio_sw/PA6*
 Set Gpio 17 in mode read: 
 > echo 0 > /sys/class/gpio_sw/PA1/cfg
 
-*On RPI it should be something like: echo "in" /sys/class/gpio/gpio17/direction*
-
 While pressing the button you want to record, run the command: 
 > ./RFsave /sys/class/gpio_sw/PA1/data data.txt
-
-*On RPI it should be something like: ./RFsave /sys/class/gpio/gpio17/value data.txt*
 
 The signal is save in data.txt, you can repeat the method for different button and save them in different files.
 
 Now we want to send the RF signal, run the command: 
 > ./RFsend /sys/class/gpio_sw/PA6/data data.txt
 
-*On RPI it should be something like: ./RFsend /sys/class/gpio/gpio4/value data.txt*
+*On RPI it should be something like:*
+*echo "in" /sys/class/gpio/gpio17/direction*
+*./RFsave /sys/class/gpio/gpio17/value data.txt*
+*./RFsend /sys/class/gpio/gpio4/value data.txt*
 
 That's all ;-)
 
